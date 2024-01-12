@@ -15,3 +15,8 @@ print(f"My name is {name} i am {age} old and i am currently learing {course} at 
 price_1=250
 price_2=400
 print(f"The shirt cost Ksh {price_1} and the lunch consted us Ksh {price_2}")
+
+def good_morning(name="Enginers"):
+    print(f"Good morning {name}")
+    good_morning()
+    good_morning("Ben")
