@@ -20,3 +20,8 @@ def good_morning(name="Enginers"):
     print(f"Good morning {name}")
     good_morning()
     good_morning("Ben")
+
+def stylish_painter ():
+    best_hairstyle = "kinky"
+    return "Micheal Jackson"
+stylish_painter()
