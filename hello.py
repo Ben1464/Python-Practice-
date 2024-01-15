@@ -60,4 +60,44 @@ def sort_tuple(tuple_value):
 
 my_list.sort(key = sort_tuple)
 print(my_list)
+#Adding elements to an exisiting list .append ()(only add the element at the end of the list)
+my_list = [12,11,15,28,29]
+my_list.append(10)
+print (my_list)
+#Adding elements using .insert()
+my_list = [3,5,8,4]
+my_list.insert(4,7)
+print (my_list)
+
+my_list = ["a", "b", "c", "d", "e", "f"]
+my_list.insert(6,"g")
+print (my_list)
+my_list.insert(3, "c")
+print (my_list)
+
+#Removing and element from a list
+# del()
+my_list = ["a","b","c","d","e","f","g","h","i","j"]
+del(my_list[2])
+print(my_list)
+#list.pop()(if used without index it remeoves the last element of the list)
+fruits = ["Mangos","Apple","Oranges","Melons"]
+fruits.pop(2)
+print(fruits)
+#list.remove () (Searches by value instead of by index)
+courses = ["Devops","SE","Cyber Security","Data Science"]
+courses.remove ("Devops")
+print(courses)
+#list.clear () (clears all the values of the list)
+products =["Absolute","Integra","Optimizer","Ranger"]
+products.clear()
+print (products)
+#Range(range is used in a for loop and can only contain integers)
+my_range = range (6)
+print(my_range)
+
+my_range = range (2,10,2)
+print (my_range)
+
+
 
