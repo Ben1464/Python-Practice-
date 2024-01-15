@@ -98,6 +98,11 @@ print(my_range)
 
 my_range = range (2,10,2)
 print (my_range)
+#strings(strings are iterable, they can be looped through)
+greatings = "Hello everyone"
+for letters in greatings:
+    print (letters)
 
-
+#one can change the format of a string using the following methods, str.uppercase (),str.lowercase ().    
+    
 
