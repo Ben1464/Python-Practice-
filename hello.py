@@ -109,5 +109,48 @@ for letters in greatings:
     my_dict = {"name":"Ben","age":28,"course":"SE"} 
     print(my_dict["age"])    
     print(my_dict["course"])
+    print(my_dict["name"])
     
+ #Algorithims basics
+    #algorithms are step by step or formula of solving a specific problem
+    #In python they are implemeneted using functions,loops and conditional statemensts 
+    # variables and data types
+    x=5
+    y=6
+    z=x+y
+    print(z)   
+
+    #Conditional statements 
+    age = 38
+    name = "Alex"
+    if age <= 18:
+        print(f"{name} is under age")
+    else:
+        print(f"{name} is an adult" )
+
+    price = 1250
+    product_1 = "Sugar"   
+    product_2 = "Coffee"
+    if price >= 500:
+        print(f" you can buy {product_1}")
+    else:
+        print(f"Save the money sugar isnt that neccesary or you can buy {product_2}")
+
+   #Loops (for,while) 
+        #for loop    
+    for i in  range(10):
+        print(i)
+
+    #while loop
+    i = 10
+    while i <= 10:
+        print(i)
+        i+=1
+
+    count = 0
+    while count < 5:
+        print(count)
+        count += 1
+
+
 
