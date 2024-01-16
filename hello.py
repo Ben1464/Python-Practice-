@@ -103,6 +103,11 @@ greatings = "Hello everyone"
 for letters in greatings:
     print (letters)
 
-#one can change the format of a string using the following methods, str.uppercase (),str.lowercase ().    
+#one can change the format of a string using the following methods, str.uppercase (),str.lowercase ().  
+
+ #Python dictionaries are built in data types that store key-value pairs it allow users to associate values (value) with unique identifiers (keys)
+    my_dict = {"name":"Ben","age":28,"course":"SE"} 
+    print(my_dict["age"])    
+    print(my_dict["course"])
     
 
