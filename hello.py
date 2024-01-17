@@ -1,10 +1,10 @@
 def hello():
     print("Hello World")
-
 hello()
 
 list_courses= ["SE","DS", "DevOPS"]
 print("list_courses",list_courses)
+print(list_courses[2])
 
 name = "Ben"
 age =28
@@ -16,15 +16,11 @@ price_1=250
 price_2=400
 print(f"The shirt cost Ksh {price_1} and the lunch consted us Ksh {price_2}")
 
-def good_morning(name="Enginers"):
+def good_morning(name="Racheal"):
     print(f"Good morning {name}")
     good_morning()
-    good_morning("Ben")
-
-def stylish_painter ():
-    best_hairstyle = "kinky"
-    return "Micheal Jackson"
-stylish_painter()
+    
+    
 #Example of a sequence 
 my_list =[1,2,3,4,5]
 print (my_list[2])
@@ -37,8 +33,12 @@ print(my_tuple[0:3])
 s = [3,5,9,0,12,17.3]
 17.3 in s #This will return "true"
 #Python list and its methonds 
+marks = [23,56,87,90,45]
+marks.sort()
+print(marks)
+
 my_list = [2,1,7,9,4,0,23]
-my_list.sort()
+my_list.sort(reverse=True)
 print(my_list)
 
 #Sorting strings by their aphabetical order 
@@ -48,6 +48,15 @@ print(my_list)
 #Sorting by length
 my_list.sort(key=len)
 print(my_list)
+
+students = ["Antony","Alexander","Ben","Kamau"]
+students.sort()
+print(students)
+
+students = ["Antony","Alexander","Ben","Kamau"]
+students.sort(reverse= True)
+print(students)
+
 #Sorting using key value 
 my_list = [('John', 1), ('Steve', 2), ('Joe', 3)]
 
