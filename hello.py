@@ -1,10 +1,10 @@
 def hello():
-    print("Hello world!")
+    print("Hello World")
 
 hello()
 
 list_courses= ["SE","DS", "DevOPS"]
-print("list_courses", list_courses)
+print("list_courses",list_courses)
 
 name = "Ben"
 age =28
@@ -110,6 +110,8 @@ for letters in greatings:
     print(my_dict["age"])    
     print(my_dict["course"])
     print(my_dict["name"])
+    print(my_dict)
+    
     
  #Algorithims basics
     #algorithms are step by step or formula of solving a specific problem
@@ -152,5 +154,11 @@ for letters in greatings:
         print(count)
         count += 1
 
-
-
+#A fuction that add elements to a list using .append method
+     
+def add_six_to_list(my_list):
+        my_list.append(6)
+        return my_list
+original_list = [1,2,3]
+new_list = add_six_to_list(original_list)
+print(new_list)
