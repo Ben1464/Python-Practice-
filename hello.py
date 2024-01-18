@@ -171,3 +171,13 @@ def add_six_to_list(my_list):
 original_list = [1,2,3]
 new_list = add_six_to_list(original_list)
 print(new_list)
+
+#Converting a string to a list using .split()
+
+Greatings = "Good morning gentlemen"
+print(Greatings.split())
+
+#Converting a list to a string using .join()
+
+my_list = ["Good","morning","gente"]
+print(" ".join(my_list))
