@@ -136,6 +136,7 @@ for letters in greatings:
     print(x)
     print(y)
     print(z)
+
     #Conditional statements 
     age = 38
     name = "Alex"
@@ -186,3 +187,18 @@ print(Greatings.split())
 
 my_list = ["Good","morning","gente"]
 print(" ".join(my_list))
+
+#Assiging one variable to more than one value
+
+x=y=z = "Alphabets"
+print(x)
+print(y)
+print(z)
+
+#Global variables declaration (variables created outside a function)
+x="Awesome!"
+def fun():
+    print("Python is" + x)
+    
+fun()
+
