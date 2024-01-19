@@ -131,6 +131,11 @@ for letters in greatings:
     z=x+y
     print(z)   
 
+    #While declaring variables, variables can be declared withh more than one values
+    x,y,z = "Bananas","Apples","Oranges"
+    print(x)
+    print(y)
+    print(z)
     #Conditional statements 
     age = 38
     name = "Alex"
