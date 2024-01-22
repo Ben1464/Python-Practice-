@@ -202,3 +202,14 @@ def fun():
     
 fun()
 
+#Object oriented programing (using objects)
+
+class Dog:
+    pass
+fido = Dog() #New instance 
+fido
+snoppy = Dog() #New insrance 
+snoppy
+tommy = Dog()#New instance 
+tommy
+
