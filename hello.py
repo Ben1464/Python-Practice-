@@ -20,7 +20,12 @@ def good_morning(name="Racheal"):
     print(f"Good morning {name}")
     good_morning()
     
-    
+#Example of boolens
+    print(10<9)
+    print(10>9)
+    print(10==9)
+    print(10!=9)
+
 #Example of a sequence 
 my_list =[1,2,3,4,5]
 print (my_list[2])
@@ -131,7 +136,7 @@ for letters in greatings:
     z=x+y
     print(z)   
 
-    #While declaring variables, variables can be declared withh more than one values
+    #While declaring variables, variables can be declared with more than one values
     x,y,z = "Bananas","Apples","Oranges"
     print(x)
     print(y)
@@ -212,4 +217,34 @@ snoppy = Dog() #New insrance
 snoppy
 tommy = Dog()#New instance 
 tommy
+#Convering a float to an integer
+x=5.6
+y=int(x)
+print(y)
+#convering a intenger to a float
+x=5
+y=float(x)
+print(y)
+
+#Example of boolens
+print(10<9)
+print(10>9)
+print(10==9)
+print(10!=9)
+
+a= 300
+b= 300
+if a==b:
+    print("True")
+else:
+
+    print("False")
+
+
+c = 500
+d = 300
+if c>d:
+    print("c is geater than d") 
+else:
+    print("d is greater than c")   
 
