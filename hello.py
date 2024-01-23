@@ -169,6 +169,12 @@ for letters in greatings:
         print(i)
         i+=1
 
+    i =6 
+    while i < 6:
+        print (i)
+        i+=1
+
+    
     count = 0
     while count < 5:
         print(count)
@@ -247,4 +253,13 @@ if c>d:
     print("c is geater than d") 
 else:
     print("d is greater than c")   
+
+#More practice on while loops 
+a=7
+while a<10:
+    print (a)   
+    if a == 9:
+        break
+    a+=1
+
 
