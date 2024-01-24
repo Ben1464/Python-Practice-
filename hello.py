@@ -125,6 +125,20 @@ for letters in greatings:
     print(my_dict["course"])
     print(my_dict["name"])
     print(my_dict)
+    print(len(my_dict))
+
+  #NB, the data types in a dictionary can be of any type 
+
+    thisdict ={"brand":"mustang", "mileage": 20000,"year":1980,"color":["blue","red","black"]}
+    print(thisdict)
+
+    #To change an item in a dictionary
+    thisdict["mileage"]= 30000
+    print(thisdict)
+
+    #To update the dictionary
+    thisdict.update({"year":1990})
+    print(thisdict)
     
     
  #Algorithims basics
