@@ -139,6 +139,13 @@ for letters in greatings:
     #To update the dictionary
     thisdict.update({"year":1990})
     print(thisdict)
+
+    #Adding items to a dictionary
+    thisdict["color"].append("yellow")
+    print(thisdict)
+    #One can also use the update method to add an item if the item is not there
+    thisdict.update({"color":"Maroon"})
+    print(thisdict)
     
     
  #Algorithims basics
