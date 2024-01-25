@@ -25,6 +25,12 @@ def my_name (fname,lname,sirname):
     print(fname + ""+ lname +"" + sirname)
 my_name("Alex","John","Mutwriri")    
 
+#Passing a list as an urgumnet to a function 
+def fruits_selection (fruits ):
+    for x in fruits:
+        print(x)
+fruits = (["Apples","Bananas","Oranges"])
+fruits_selection(fruits)
 
 def hello():
     print("Hello World")
