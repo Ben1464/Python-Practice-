@@ -1,3 +1,31 @@
+#Functions 
+
+def my_function():
+    print("my-function")
+my_function()
+
+#Passing urguments to functions 
+def personal_info(name,age,sex,occupation):
+    print(f"my name is {name} i am {age} and i am {sex} working as a {occupation}")
+
+personal_info("Mwangi",21,"male","engineer")
+personal_info("Kimani",52,"male","doctor")
+
+#Passing arbitrary number of arguments
+def my_family(*kids):
+    print("The youngest child is "+ kids[3])
+my_family("Mwangi","Kimani","Alex","Ben","James")    
+
+#Returning values from functions
+def my_function(name):
+    return f"my name is {name}"
+print(my_function("Mwangi"))
+#strings concatenation in a function
+def my_name (fname,lname,sirname):
+    print(fname + ""+ lname +"" + sirname)
+my_name("Alex","John","Mutwriri")    
+
+
 def hello():
     print("Hello World")
 hello()
