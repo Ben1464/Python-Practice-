@@ -317,4 +317,44 @@ while a<10:
         break
     a+=1
 
+    #Classes 
+    # The __init__() function is always executed when the class is being initiated
+    class Person:
+        def __init__(self,name,age):
+            self.name = name
+            self.age = age
+
+p1 = Person("John", 36)
+print(p1.name)
+print(p1.age)
+p1.age = 40 
+print(p1.age)
+    
+    #The __str__() function is used to return a string representation of the object
+class Person:
+        def __init__(self,name,age,sex):
+            self.name = name
+            self.age = age
+            self.sex = sex
+        def __str__(self):
+            return f"{self.name} is {self.age} years old and he is {self.sex}"
+
+p1 = Person("George", 26,"male")
+print(p1)
+p2 =Person("Mercy",19,"female")
+print(p2)
+
+#Object methods
+#A method is a function that is defined inside the body of a class
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def myfunc(self):
+        print("Hello my name is " + self.name + " and i am " + str(self.age) + " years old")
+
+p1 = Person("Tonny", 16)
+p1.myfunc()
+
 
