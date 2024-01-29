@@ -329,6 +329,20 @@ print(p1.name)
 print(p1.age)
 p1.age = 40 
 print(p1.age)
+
+
+class School:
+    def __init__(self,name,location):
+        self.name = name
+        self.location = location
+
+s1 = School("Moringa School","Nairobi")
+print(s1.name)
+print(s1.location)
+s1.location = "Karen"
+print(s1.location)
+
+        
     
     #The __str__() function is used to return a string representation of the object
 class Person:
@@ -344,6 +358,19 @@ print(p1)
 p2 =Person("Mercy",19,"female")
 print(p2)
 
+class Course:
+    def __init__(self,name,time,rate):
+        self.name = name
+        self.time = time
+        self.rate = rate
+    def __str__(self):
+        return f"{self.name} costs {self.rate}"
+
+c1 = Course("SE", 4, 200000)
+print(c1)
+c1.rate = 250000 #To change the rate from the initial declaration 
+print(c1.rate)
+
 #Object methods
 #A method is a function that is defined inside the body of a class
 
@@ -356,5 +383,41 @@ class Person:
 
 p1 = Person("Tonny", 16)
 p1.myfunc()
+#Python inheritance 
+#Inheritance allows us to define a class that inherits all the methods and properties from another class.
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+  pass
+
+x = Student("Mike", "Olsen")
+x.printname()
+#The super () function is used to give access to the methods of a parent class.
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
+    self.graduationyear = 2018
+
+  def welcome(self):
+    print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
+
+x = Student("Mike", "Olsen")
+print(x.graduationyear)
+x.printname()
+x.welcome()
 
 
