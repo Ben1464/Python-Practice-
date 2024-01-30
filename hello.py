@@ -419,5 +419,89 @@ x = Student("Mike", "Olsen")
 print(x.graduationyear)
 x.printname()
 x.welcome()
+#Iterators 
+#Iterators are an object that can be iterated upon
+#The __iter__() method is called once, and should return the iterator object itself
+
+my_tuple = ("maize","rice","beans")
+my_iter = iter(my_tuple)
+print(next(my_iter))
+print(next(my_iter))
+print(next(my_iter))
+
+fruits = ["Apples","Bananas","Oranges"]
+myit = iter(fruits)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+#iteration in strings 
+my_string = "Banana"
+myit= iter(my_string)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+#Looping through an iterator
+#To loop through an iterator, we can use a for loop
+#The for loop actually creates an iterator object and executes the next() method for each loop
+
+fruits_selection = ("apples","bananas","oranges")
+for x in fruits_selection:
+    print(x)
+
+#Iterating through characters of a string 
+    mystr = "hello"  
+    for x in mystr:
+        print(x)  
+
+#Iteration that returns numbers 
+class MyNumbers:
+  def __iter__(self):
+    self.a = 1
+    return self
+
+  def __next__(self):
+    x = self.a
+    self.a += 1
+    return x
+
+myclass = MyNumbers()
+myiter = iter(myclass)
+
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))     
+
+#Application of StopIteration
+#StopIteration is raised when the next() method of an iterator has no further values
+
+class MyNumbers:
+  def __iter__(self):
+    self.a = 1
+    return self
+
+  def __next__(self):
+    if self.a <= 8:
+      x = self.a
+      self.a += 1
+      return x
+    else:
+      raise StopIteration
+
+myclass = MyNumbers()
+myiter = iter(myclass)
+
+for x in myiter:
+    print(x)
+
+
+
 
 
