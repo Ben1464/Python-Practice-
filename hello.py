@@ -500,7 +500,36 @@ myiter = iter(myclass)
 
 for x in myiter:
     print(x)
+#lambda functions 
+    #lambda functions are anonymous functions
+    #A lambda function can take any number of arguments, but can only have one expression.
 
+    x = lambda a: a+10
+    print(x(5))
+
+    x = lambda a,b : a*b
+    print(x(3,9))
+
+    x= lambda a,b,c : a+b*c
+    print(x(3,4,5))
+
+#Dates
+    # The datetime module provides classes for manipulating dates and times
+
+    import datetime
+    x = datetime.datetime.now()
+    print(x)
+
+  # To return the date and the and the name of the week day
+    
+    #import datetime
+    #x = datetime.datetime.now()
+    #print(x.strftime("%B %d, %Y"))
+
+    import datetime
+    x=datetime.datetime.now()
+    print(x.strftime("%B %d, %Y %A . Today is victory of yourself yesterday,tommorrow is your victory of today."))  
+    
 
 
 
