@@ -547,6 +547,18 @@ for x in myiter:
         myinnerfunc()
 
 myfunc()
+  
+  #Global scope
+x = 300
+
+def myfunc():
+  print(x)
+
+myfunc()
+
+print(x)
+
+
 
     
 
