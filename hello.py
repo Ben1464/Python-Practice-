@@ -522,13 +522,32 @@ for x in myiter:
 
   # To return the date and the and the name of the week day
     
-    #import datetime
-    #x = datetime.datetime.now()
-    #print(x.strftime("%B %d, %Y"))
+    import datetime
+    x = datetime.datetime.now()
+    print(x.strftime("%B %d, %Y"))
 
     import datetime
     x=datetime.datetime.now()
     print(x.strftime("%B %d, %Y %A . Today is victory of yourself yesterday,tommorrow is your victory of today."))  
+
+    #local functions 
+
+    def my_fun():
+        x=300
+        print(x)
+    my_fun()
+
+    #functions within a function
+
+ 
+    def myfunc():
+        x = 300
+    def myinnerfunc():
+        print(x)
+        myinnerfunc()
+
+myfunc()
+
     
 
 
