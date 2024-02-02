@@ -1,7 +1,7 @@
 #Functions 
 
 def my_function():
-    print("my-function")
+    print("First function to write ")
 my_function()
 
 #Passing urguments to functions 
@@ -10,6 +10,13 @@ def personal_info(name,age,sex,occupation):
 
 personal_info("Mwangi",21,"male","engineer")
 personal_info("Kimani",52,"male","doctor")
+
+
+def students_details(name,course,school):
+    print(f"{name} is doing {course} in {school}. ")
+
+students_details ("Beatrice","Software Engineer","Moringa school")
+students_details ("Mercy","DevOPs","Moringa school")
 
 #Passing arbitrary number of arguments
 def my_family(*kids):
@@ -32,9 +39,11 @@ def fruits_selection (fruits ):
 fruits = (["Apples","Bananas","Oranges"])
 fruits_selection(fruits)
 
-def hello():
-    print("Hello World")
-hello()
+def programing_languages(languages):
+    for x in languages:
+        print (x)
+languages = (["Java","JavaScript","Python",])
+programing_languages(languages)
 
 list_courses= ["SE","DS", "DevOPS"]
 print("list_courses",list_courses)
@@ -55,10 +64,10 @@ def good_morning(name="Racheal"):
     good_morning()
     
 #Example of boolens
-    print(10<9)
-    print(10>9)
-    print(10==9)
-    print(10!=9)
+print(10<9)
+print(10>9)
+print(10==9)
+print(10!=9)
 
 #Example of a sequence 
 my_list =[1,2,3,4,5]
@@ -549,7 +558,7 @@ for x in myiter:
 myfunc()
   
   #Global scope
-x = 300
+x = 700
 
 def myfunc():
   print(x)
