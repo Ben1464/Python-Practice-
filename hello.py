@@ -568,6 +568,19 @@ myfunc()
 print(x)
 
 
+#User input
+firstname = input("Enter firstname: ")
+print("Firstname: ", firstname)
+
+lastname = input("Enter lastname: ")
+print("Lastname: ", lastname)
+
+email = input("Enter email:")
+print("Email: ", email)
+
+phone  = input("Enter phone")
+print("Phone: ", phone)
+
 
     
 
