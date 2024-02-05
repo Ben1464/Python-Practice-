@@ -581,9 +581,66 @@ print("Email: ", email)
 phone  = input("Enter phone")
 print("Phone: ", phone)
 
+#Python polymorphism
+#Polymorphism means the same name being used for different purposes
 
-    
+x = "Hello world"
+print((len(x)))
+
+#For tuples len() returns the number of items in the tuple 
+
+my_tuple = ("maize","rice", "beans" )
+print(len(my_tuple))
 
 
+# For dictionary len() returns the number of keys/value pairs 
 
+student = {
+    "firstname": "John",
+    "lastname": "Doe",
+    "age": 25,
+    "status": "single",
+    "course": "Python"
+}
+print(len(student))
 
+#len() in a class
+
+class car :
+    def __init__(self, name, model):
+        self.mane = name
+        self.model= model
+
+        def move (self):
+            print("Drive")
+
+class Car:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Drive!")
+
+class Boat:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Sail!")
+
+class Plane:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Fly!")
+
+car1 = Car("Ford", "Mustang")       #Create a Car class
+boat1 = Boat("Ibiza", "Touring 20") #Create a Boat class
+plane1 = Plane("Boeing", "747")     #Create a Plane class
+
+for x in (car1, boat1, plane1):
+  x.move()
