@@ -644,3 +644,42 @@ plane1 = Plane("Boeing", "747")     #Create a Plane class
 
 for x in (car1, boat1, plane1):
   x.move()
+# JSON
+  #JSON is a syntax for storing and exchanging data
+
+
+#Convering JSON to python
+  import json
+  x = '{"name":"John", "age":30, "city":"New York"}'
+
+  y = json.loads(x)
+
+  print(y["city"])
+  print (y["age"])
+
+
+  # Converting python to JSON
+
+  x = {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+  }
+
+  y = json.dumps(x)
+
+  print(y)
+
+  #Converting a python class to a JSON object
+
+  class Student:
+    def __init__(self, name, age, city):
+      self.name = name
+      self.age = age
+      self.city = city
+
+  x = Student("John", 30, "New York")
+
+  y = json.dumps(x)
+
+  print(y)
