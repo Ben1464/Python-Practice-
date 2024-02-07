@@ -578,8 +578,12 @@ print("Lastname: ", lastname)
 email = input("Enter email:")
 print("Email: ", email)
 
-phone  = input("Enter phone")
+phone  = input("Enter phone:")
 print("Phone: ", phone)
+
+
+password = input("Enter password:")
+print("Password: ", password)
 
 #Python polymorphism
 #Polymorphism means the same name being used for different purposes
