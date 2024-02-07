@@ -672,14 +672,44 @@ for x in (car1, boat1, plane1):
 
   #Converting a python class to a JSON object
 
-  class Student:
-    def __init__(self, name, age, city):
-      self.name = name
-      self.age = age
-      self.city = city
+  
+  #python math
+  #The build in max() and min () function
 
-  x = Student("John", 30, "New York")
-
-  y = json.dumps(x)
-
+  x = max (7,9,30)
+  y = min (7,9,30)
+  print(x)
   print(y)
+# The abs() function returns the absolute (positive) value of a number
+
+x = abs(-7.25)
+print(x)
+
+# The pow() function returns the value of x to the power of y
+x = pow(4,3)
+print(x)
+
+#The round() function returns the value of x rounded to the nearest integer
+x = round(7.5)
+print(x)
+
+#The math module
+
+import math
+x = math.sqrt(64)
+print(x)
+
+#The math.ceil() method rounds a number upwards to its nearest integer
+
+x = math.ceil(1.4)
+print(x)
+
+#The math.floor() method rounds a number downwards to its nearest integer
+
+x = math.floor(1.4)
+print(x)
+
+#The math.pi() method returns the value of pi
+
+x = math.pi
+print(x)
