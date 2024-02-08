@@ -717,3 +717,25 @@ print(x)
 
 x = math.pi
 print(x)
+
+#More practice on classes and objects 
+#To initialize an object you have to use the __init__() function to assign value to the object properties
+class Person:
+  def __init__(self, name, age, height):
+    self.name = name
+    self.age = age
+    self.height = height
+
+p1 = Person("Lucy", 36, 170)
+p2 = Person("Johnty",34,123)
+
+print(p1.name)
+print(p1.age)
+print(p1.height)
+
+print(p2.name)
+print(p2.age)
+print(p2.height)
+
+
+   
